@@ -23,13 +23,13 @@ public class Generator {
     }
 
     public void countMatches(Integer num1, Integer num2) {
-        Integer tempInt1 = generateNumber(num1, factorA);
-        Integer tempInt2 = generateNumber(num2, factorB);
-        compareLastEightBits(tempInt1, tempInt2);
+        Integer generatedNumber1 = generateNumber(num1, factorA);
+        Integer generatedNumber2 = generateNumber(num2, factorB);
+        compareLastEightBits(generatedNumber1, generatedNumber2);
         for (int i = 0; i < 999999; i++) {
-            tempInt1 = generateNumber(tempInt1, factorA);
-            tempInt2 = generateNumber(tempInt2, factorB);
-            compareLastEightBits(tempInt1, tempInt2);
+            generatedNumber1 = generateNumber(generatedNumber1, factorA);
+            generatedNumber2 = generateNumber(generatedNumber2, factorB);
+            compareLastEightBits(generatedNumber1, generatedNumber2);
         }
         System.out.println(counter);
     }
