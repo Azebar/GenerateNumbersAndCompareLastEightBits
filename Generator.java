@@ -15,7 +15,6 @@ public class Generator {
            return Integer.toBinaryString(number).substring(Integer.toBinaryString(number).length() - 8);
         else
            return Integer.toBinaryString(number);
-
     }
 
     public void compareLastEightBits(Integer num1, Integer num2) {
