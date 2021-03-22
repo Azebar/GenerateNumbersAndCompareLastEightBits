@@ -11,8 +11,8 @@ public class Main {
             long initialNumberB = Long.parseLong(args[1]);
             Generator generatorA = new Generator(FACTOR_A);
             Generator generatorB = new Generator(FACTOR_B);
-            MatchesCounter compareAndGenerate = new MatchesCounter(generatorA, generatorB);
-            System.out.println(compareAndGenerate.countMatches(initialNumberA, initialNumberB));
+            MatchesCounter matchesCounter = new MatchesCounter(generatorA, generatorB);
+            System.out.println(matchesCounter.countMatches(initialNumberA, initialNumberB));
             } else {
             System.out.println("Please provide 2 integer parameters to the application");
         }
